@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build the nginx docker image') {
+        stage('Build the mysql docker image') {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerHubCreds') {
